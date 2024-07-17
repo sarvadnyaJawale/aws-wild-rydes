@@ -80,7 +80,7 @@ WildRydes.map = WildRydes.map || {};
                 geometry: wrMap.selectedPoint
             });
             view.graphics.add(pinGraphic);
-            $(wrMap).trigger('pickupChange');
+            $(wrMap).trigger('pickupChange'); // Trigger event
         });
 
         wrMap.animate = function animate(origin, dest, callback) {
